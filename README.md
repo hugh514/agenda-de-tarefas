@@ -11,7 +11,7 @@ Aplicação simples em JavaScript para gerenciar tarefas com título e data limi
 
 ## 🛠 Tecnologias
 - HTML
-- CSS
+- Tailwind CSS
 - JavaScript
 
 ## ▶️ Como usar
