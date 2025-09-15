@@ -4,25 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Agenda de Tarefas</title>
 </head>
 
 <body>
-    <main class="agenda">
-        <h1>Agenda de Tarefas</h1>
-        <section class="cadastro">
-            <form>
-                <p>Titulo</p>
-                <input type="text">
-                <p>Data Limite</p>
-                <input type="date">
-                <button type="submit">Adicionar</button>
-            </form>
+    <main class="bg-blue-500 min-h-screen flex flex-col items-center p-6 text-white">
+        <h1 class="text-4xl font-bold mb-6">Agenda de Tarefas</h1>
+        <section class="flex gap-4 mb-6">
+            
+            <div class="flex flex-col">
+                <label class="mb-1 font-semibold">Titulo</label>
+                <input type="text" class="p-2 rounded border border-gray-300 text-black">
+            </div>
+
+            <div class="flex flex-col">
+                <label class="mb-1 font-semibold">Data Limite</label>
+                <input type="date" class="p-2 rounded border border-gray-300 text-black">
+            </div>
+            
+            <button type="submit" class="bg-emerald-600 hover:bg-green-800 text-white font-bold py-2 px-4 my-1 rounded">Adicionar</button>
         </section>
-        <section class="visualizar">
-            <ul>
+        <section class="w-full max-w-md">
+            <ul class="bg-white text-black rounded p-4 shadow">
 
             </ul>
         </section>
