@@ -15,7 +15,7 @@ function adicionarTarefa(texto, data) {
 }
 
 adicionar.addEventListener('click', function () {
-    if(!inputTexto.value && !inputData.value) return;
+    if(!inputData.value && !inputTexto.value) return;
     console.log(`${inputTexto.value} ${inputData.value}`);
     adicionarTarefa(inputTexto.value, inputData.value);
 });
