@@ -25,7 +25,7 @@ function adicionarTarefa() {
 function parseDateAtual(dateStr) {
     const [year, month, day] = dateStr.split('-').map(Number);
     const agora = new Date();
-    return new Date(year, month - 1, day, agora.getHours(), agora.getMinutes(), agora.getSeconds());
+    return new Date(year, month - 1, day, agora.getHours() + 1, agora.getMinutes(), agora.getSeconds());
 }
 
 function getClasseDias(dias) {
