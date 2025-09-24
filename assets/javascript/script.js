@@ -2,6 +2,16 @@ const textoInput = document.querySelector(".input-text");
 const dataInput = document.querySelector(".input-date");
 const adicionar = document.querySelector(".adicionar");
 
+const hoje = new Date();
+
+const ano = hoje.getFullYear();
+const mes = String(hoje.getMonth() + 1).padStart(2, '0'); 
+const dia = String(hoje.getDate()).padStart(2, '0');
+
+const dataFormatada = `${ano}-${mes}-${dia}`;
+
+dataInput.value = dataFormatada;
+
 let tarefas = [];
 
 let contador = 1;
@@ -21,7 +31,6 @@ function adicionarTarefa() {
     }
 
 }
-
 function getClasseDias(dias) {
     if (dias < 0) {
         return "bg-gray-200 text-gray-500";
