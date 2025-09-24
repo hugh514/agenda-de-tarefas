@@ -65,7 +65,10 @@ function criarElemento(contador) {
     `;
         document.querySelector(".lista").appendChild(tarefaLi);
 
-        console.log(`${valorTarefa.titulo} ${valorTarefa.data_limite}`);
+       textoInput.value = "";
+       dataInput.value = "";
+       textoInput.focus();
+
     } else {
         console.error(`Tarefa com ID ${contador} não encontrada.`);
     }
