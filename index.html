@@ -10,28 +10,37 @@
 </head>
 
 <body>
-    <main class="bg-blue-500 min-h-screen flex flex-col items-center p-6 text-white">
-        <h1 class="text-4xl font-bold mb-6">Agenda de Tarefas</h1>
-        <section class="flex gap-4 mb-6">
-            
+    <main class="bg-gradient-to-br from-blue-500 to-indigo-600 min-h-screen flex flex-col items-center p-8 text-white">
+
+        <h1 class="text-5xl font-extrabold mb-10 drop-shadow-lg">Agenda de Tarefas</h1>
+
+        <section class="flex flex-wrap gap-6 mb-10 bg-white/10 p-6 rounded-xl shadow-lg">
+
             <div class="flex flex-col">
-                <label class="mb-1 font-semibold">Titulo</label>
-                <input type="text" class="input-text p-2 rounded border border-gray-500 text-black bg-white">
+                <label class="mb-1 font-semibold text-sm">Título</label>
+                <input type="text"
+                    class="bg-white input-text p-2 rounded-lg border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-gray-400">
             </div>
 
             <div class="flex flex-col">
-                <label class="mb-1 font-semibold">Data Limite</label>
-                <input type="date" class="input-date p-2 rounded border border-gray-500 text-black bg-white">
+                <label class="mb-1 font-semibold text-sm">Data Limite</label>
+                <input type="date"
+                    class="bg-white input-date p-2 rounded-lg border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-gray-400">
             </div>
-            
-            <button type="submit" class="adicionar bg-emerald-600 hover:bg-green-800 text-white font-bold py-2 px-4 rounded">Adicionar</button>
+
+            <button type="submit"
+                class="adicionar self-end bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-5 rounded-lg shadow-md transition">
+                Adicionar
+            </button>
         </section>
-        <section class="w-full max-w-md">
-            <ul class="lista bg-white text-black rounded p-4 shadow">
+
+        <section class="w-full max-w-lg">
+            <ul class="lista bg-white text-gray-800 rounded-xl p-6 shadow-xl space-y-3">
 
             </ul>
         </section>
     </main>
+
     <script src="assets/javascript/script.js"></script>
 </body>
 
