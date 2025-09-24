@@ -59,9 +59,18 @@ function criarElemento(contador) {
       <p class="font-semibold text-gray-800">${valorTarefa.titulo}</p>
       <p class="text-sm text-gray-500">Prazo: ${valorTarefa.data_limite}</p>
     </div>
+
     <span class="text-sm font-medium px-3 py-1 rounded-full ${classe}">
     ${dias < 0 ? "Vencido" : dias + " dias restantes"}
     </span>
+
+    <button class="editar bg-yellow-500 hover:bg-yellow-600 text-white text-sm font-semibold px-3 py-1 rounded">
+      Editar
+    </button>
+
+    <button class="excluir bg-red-500 hover:bg-red-900 text-white text-sm font-semibold px-3 py-1 rounded">
+      Excluir
+    </button>
     `;
         document.querySelector(".lista").appendChild(tarefaLi);
 
