@@ -2,46 +2,54 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Agenda de Tarefas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Agenda de Tarefas</title>
 </head>
 
 <body>
-    <main class="bg-gradient-to-br from-blue-500 to-indigo-600 min-h-screen flex flex-col items-center p-8 text-white">
+  <main class="bg-gradient-to-br from-blue-500 to-indigo-600 min-h-screen flex flex-col items-center p-6 sm:p-8 text-white">
 
-        <h1 class="text-5xl font-extrabold mb-10 drop-shadow-lg">Agenda de Tarefas</h1>
 
-        <section class="flex flex-wrap gap-6 mb-10 bg-white/10 p-6 rounded-xl shadow-lg">
+    <h1 class="text-3xl sm:text-5xl font-extrabold mb-8 sm:mb-10 drop-shadow-lg text-center">
+      Agenda de Tarefas
+    </h1>
 
-            <div class="flex flex-col">
-                <label class="mb-1 font-semibold text-sm">Título</label>
-                <input type="text"
-                    class="bg-white input-text p-2 rounded-lg border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-gray-400">
-            </div>
 
-            <div class="flex flex-col">
-                <label class="mb-1 font-semibold text-sm">Data Limite</label>
-                <input type="date"
-                    class="bg-white input-date p-2 rounded-lg border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-gray-400">
-            </div>
+    <section
+      class="flex flex-col sm:flex-row sm:items-end gap-4 sm:gap-6 mb-10 bg-white/10 p-6 rounded-xl shadow-lg w-full max-w-2xl">
 
-            <button type="submit"
-                class="adicionar self-end bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-5 rounded-lg shadow-md transition">
-                Adicionar
-            </button>
-        </section>
 
-        <section class="w-full max-w-lg">
-            <ul class="lista bg-white text-gray-800 rounded-xl p-6 shadow-xl space-y-3">
+      <div class="flex flex-col flex-1">
+        <label class="mb-1 font-semibold text-sm">Título</label>
+        <input type="text"
+          class="bg-white input-text p-2 rounded-lg border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-gray-400 w-full">
+      </div>
 
-            </ul>
-        </section>
-    </main>
 
-    <script src="assets/javascript/script.js"></script>
+      <div class="flex flex-col flex-1">
+        <label class="mb-1 font-semibold text-sm">Data Limite</label>
+        <input type="date"
+          class="bg-white input-date p-2 rounded-lg border border-gray-300 text-black focus:outline-none focus:ring-2 focus:ring-gray-400 w-full">
+      </div>
+
+
+      <button type="submit"
+        class="adicionar bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-5 rounded-lg shadow-md transition self-stretch sm:self-auto">
+        Adicionar
+      </button>
+    </section>
+
+
+    <section class="w-full max-w-2xl">
+      <ul class="lista bg-white text-gray-800 rounded-xl p-4 sm:p-6 shadow-xl space-y-3">
+      </ul>
+    </section>
+  </main>
+
+  <script src="assets/javascript/script.js"></script>
 </body>
 
 </html>
